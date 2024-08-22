@@ -1,15 +1,25 @@
-body{
-    padding-left: 20%;
-    padding-right: 20%;
-}
-
 /* CSS HEADER INICIO */
 header{
     width: 100%;
+    min-width: 800px;
     height: 80px;
+    padding: 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #92929256;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.headerSearch{
+    justify-content: center;
 }
 
 header .logo{
@@ -50,8 +60,13 @@ header .logo img{
 }
 
 .searchBtn.first{
+    font-weight: bold;
     border-top-left-radius: 90px;
     border-bottom-left-radius: 90px;
+}
+
+.searchBtn.second{
+    font-weight: bold;
 }
 
 .searchBtn.last{
@@ -62,4 +77,37 @@ header .logo img{
 .headerSearch:hover{
     box-shadow: 0px 1px 5px gray;
     transition: 0.2s;
+}
+
+.profileBtn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 48px;
+    width: 86px;
+}
+
+.anuncioAnchor{
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    align-items: center;
+    height: 28px;
+    color: black;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 90px;
+    border: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.anuncioAnchor:hover{
+    background-color: rgb(233, 233, 233);
+    transition: 0.2s;
+    
+}
+
+header.svg{
+    background-color: pink;
 }
