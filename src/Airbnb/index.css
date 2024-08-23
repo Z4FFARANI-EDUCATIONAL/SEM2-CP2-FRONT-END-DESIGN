@@ -1,14 +1,15 @@
 /* CSS HEADER INICIO */
+body{
+    padding: 0 200px;
+}
+
 header{
     width: 100%;
-    min-width: 800px;
     height: 80px;
-    padding: 0 370px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    box-sizing: border-box;
     border-bottom: 1px solid #9292922c;
 }
 
@@ -30,11 +31,21 @@ header .logo img{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid rgba(184, 184, 184, 0.425);
+    box-shadow: 0px 0px 1px rgb(184, 184, 184);
+    border-radius: 90px;
+}
+
+.headerSearch:hover{
+    box-shadow: 0px 1px 5px rgba(181, 181, 181, 0.61);
+    transition: 0.2s;
 }
 
 .searchBtn{
     height: 48px;
     border: none;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 .searchBtnText{
@@ -53,68 +64,8 @@ header .logo img{
     align-items: center;
     border-top-right-radius: 90px;
     border-bottom-right-radius: 90px;
+    font-weight: 400;
 }
-
-/* .headerSearch{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 48px;
-    min-width: 348px;
-    max-width: 780px;
-    border-radius: 90px;
-    border: 1px solid rgba(184, 184, 184, 0.425);
-    box-shadow: 0px 0px 1px rgb(184, 184, 184);
-}
-
-.headerSearch:hover{
-    box-shadow: 0px 1px 5px rgba(211, 211, 211, 0.61);
-    transition: 0.2s;
-}
-
-.searchBtn{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    padding:0 10px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 600px;
-    background-color: transparent;
-    border: none;
-
-}
-
-.searchBtn.first{
-    padding-left: 24px;
-    font-weight: bold;
-    border-top-left-radius: 90px;
-    border-bottom-left-radius: 90px;
-}
-
-.searchBtn.second{
-    font-weight: bold;
-}
-
-.searchBtn.last{
-    border-top-right-radius: 90px;
-    border-bottom-right-radius: 90px;
-}
-
-.lastBtn{
-    display: flex;
-    height: 48px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.searchBtnText{
-    padding:0 10px;
-} */
-
 
 .searchIcon{
     display: flex;
@@ -159,6 +110,7 @@ header .logo img{
 
 .profileBtn{
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
@@ -168,4 +120,21 @@ header .logo img{
     border: 1px solid rgba(184, 184, 184, 0.425);
     padding: 8px 8px 8px 14px;
     background: transparent;
+}
+
+.profileBtn:hover{
+    transition: 0.2s;
+    box-shadow: 0px 1px 5px rgba(181, 181, 181, 0.61);
+}
+
+.barSvg{
+    height: 16px;
+    width: 16px;
+    color: #595959;
+}
+
+.profileSvg{
+    height: 32px;
+    width: 32px;
+    color: #6a6a6a;
 }
