@@ -1,0 +1,47 @@
+body {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Ajustes nas informações */
+
+.conteudoPagina {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.infoCarrossel {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+/* Ajustes nas imagens e informações dos quartos */
+
+.infoImagens {
+    display: flex;
+    gap: 20px;
+    border-bottom: solid 1px #92929281;
+}
+
+.Imagem1 {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.Imagem2 {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+}
+
+
