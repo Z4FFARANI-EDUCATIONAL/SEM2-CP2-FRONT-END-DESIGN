@@ -1,4 +1,5 @@
 /* Adicionar uma linha acima de 40px */
+/* Adicionar fontes e tamanho */
 
 .controledaPagina {
     padding: 0 140px;
@@ -8,7 +9,7 @@
 .controledasInfo {
     border: solid 2px red;
     width: 60%;
-    border-bottom: solid 1px rgba(172, 172, 196, 0.281);
+    padding: 5px;
 }
 
 .menuFixado {
@@ -31,9 +32,11 @@
 
 .organizaImgs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-}
+    gap: 10px;
+    border-bottom: solid 1px rgba(146, 146, 179, 0.26);
+} 
 
 .imagem {
     width: 300px;
@@ -41,6 +44,7 @@
     padding-bottom: 10px;
     object-fit: cover;
     border-radius: 20px;
+    max-width: 800px;
 }
 
 .quadroOrgImg {
@@ -51,7 +55,7 @@
 .ajusteP {
     padding-top: 10px;
     font-size: 16px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .Btn {
@@ -63,4 +67,47 @@
     height: 35px;
     width: 35px;
     cursor: pointer;
+}
+
+.titulo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.conteinerGeralInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ajustes {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.ajustesRiscado {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+}
+
+
+.BtnEstilizado {
+    border: solid 1px rgb(41, 39, 39);
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(41, 39, 39);
+}
+
+.BtnAjustes {
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
