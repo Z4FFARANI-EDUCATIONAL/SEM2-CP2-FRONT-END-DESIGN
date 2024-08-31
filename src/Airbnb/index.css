@@ -1,3 +1,204 @@
+/* Adicionar uma linha acima de 40px */
+/* Adicionar fontes e tamanho */
+
+.controledaPagina {
+    padding: 0 140px;
+    display: flex;
+}
+
+.controledasInfo {
+    width: 60%;
+    padding: 5px;
+}
+
+.menuFixado {
+    width: 40%;
+}
+
+.elementosdoQuarto {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.menuBtn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.organizaImgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    border-bottom: solid 1px rgba(146, 146, 179, 0.26);
+} 
+
+.imagem {
+    width: 300px;
+    height: 210px;
+    padding-bottom: 10px;
+    object-fit: cover;
+    border-radius: 20px;
+    max-width: 800px;
+}
+
+.quadroOrgImg {
+    width: 300px;
+    height: auto;
+}
+
+.ajusteP {
+    padding-top: 10px;
+    font-size: 16px;
+    padding-bottom: 30px;
+}
+
+.Btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(175, 207, 207, 0.185);
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+}
+
+.titulo {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.conteinerGeralInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ajustes {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+}
+
+.ajustesRiscado {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 10px;
+    text-decoration: line-through;
+}
+
+
+.BtnEstilizado {
+    border: solid 1px rgb(41, 39, 39);
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: transparent;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(41, 39, 39);
+}
+
+.BtnAjustes {
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    
+}
+
+.conteiner_Btn {
+    border-bottom: 1px solid rgba(146, 146, 179, 0.26);
+}
+
+/* Mudanças no conteiner do calendário */
+
+.Separacao {
+    padding-top: 35px;
+    padding-bottom: 30px;
+}
+
+.conteiner_ImgCalendario img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.conteiner_IconText {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    text-decoration: underline;
+}
+
+.conteiner_Calendario {
+    padding-bottom: 35px;
+}
+
+/* Mundanças no conteiner de avaliações */
+
+.conteiner_Avaliacoes {
+    padding: 0 140px;
+    padding-bottom: 100px;
+    /* Ajustar tamanho de espaçamento quando for juntar os códigos */
+}
+
+.conteiner_Av_Titulo {
+    border-top: solid 1px rgba(146, 146, 179, 0.26);
+    padding-top: 35px;
+}
+
+.imagens_avaliacoes {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.Img_Info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    padding-top: 35px;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.Avaliacoes_usuarios {
+    display: flex;
+    align-items: center;
+}
+
+.Avaliacao_Marina {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 15px;
+}
+
+.Comentario {
+    padding-bottom: 15px;
+}
+
+.btn_MostrarMais button{
+    border: solid transparent;
+    background-color: transparent;
+    text-transform: lowercase;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Caso seja necessário, adicionar o restante do comentário utilizando o botão para mostrar o restante do comentário. */
+=======
 /* CSS HEADER INICIO */
 
 header{
