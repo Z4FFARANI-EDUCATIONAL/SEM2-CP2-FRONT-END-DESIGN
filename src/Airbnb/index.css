@@ -1,0 +1,298 @@
+/* CSS HEADER INICIO */
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 1px solid #9292922d;
+}
+
+.headerCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    padding: 0 360px;
+}
+
+header .logo{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 118px;
+    height: 64px;
+    padding-right: 140px;
+    cursor: pointer;
+}
+
+header .logo img{
+    width: 101px;
+    height: 36px;
+}
+
+.headerSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(184, 184, 184, 0.425);
+    box-shadow: 0px 0px 1px rgb(184, 184, 184);
+    border-radius: 90px;
+}
+
+.headerSearch:hover{
+    box-shadow: 0px 1px 5px rgba(181, 181, 181, 0.61);
+    transition: 0.2s;
+}
+
+.searchBtn{
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.searchBtnText{
+    padding: 0 22px;
+    white-space: nowrap;
+    
+}
+.searchBtn.first{
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+
+.searchBtn.last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 90px;
+    border-bottom-right-radius: 90px;
+    font-weight: 400;
+}
+
+.searchIcon{
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    border-radius: 90px;
+    justify-content: center;
+    background-color: #FF385C;
+    margin: 7px 7px 7px 0;
+} 
+
+.searchIcon svg{
+    color: white;
+    background-color: #FF385C;
+}
+
+.separador{
+    font-size: 26px;
+    font-weight: 100;
+}
+
+
+.anuncioAnchor{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    height: 18px;
+    color: black;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 90px;
+    border: none;
+    text-decoration: none;
+    padding: 0 10px;
+    line-break: strict;
+}
+
+.globeSvg svg{
+    padding: 0 5px;
+}
+
+.profileBtn{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    height: 48px;
+    width: 86px;
+    border-radius: 90px;
+    border: 1px solid rgba(184, 184, 184, 0.425);
+    padding: 8px 8px 8px 14px;
+    background: transparent;
+}
+
+.profileBtn:hover{
+    transition: 0.2s;
+    box-shadow: 0px 1px 5px rgba(181, 181, 181, 0.61);
+}
+
+.barSvg{
+    height: 16px;
+    width: 16px;
+    color: #595959;
+}
+
+.profileSvg{
+    height: 32px;
+    width: 32px;
+    color: #6a6a6a;
+}
+
+/* CSS TITULO DA LOCAÇÃO */
+main{
+    padding: 0 360px;
+    flex-wrap: nowrap;
+
+}
+
+.locationTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-top: 24px;
+    line-break: strict;
+}
+
+.locationTitle h1{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.locationManageBtns{
+    display: flex;
+}
+
+.save-share-btns{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    text-decoration: underline;
+    background: none;
+    border: none;
+    font-weight: 600;
+    color: rgb(27, 27, 27);
+    padding: 8px;
+    font-size: 14px;
+}
+
+.save-share-btns:hover{
+    color: black;
+}
+
+.save-share-btns svg{
+    margin-right: 7px;
+}
+
+/* CSS GRID DE IMAGENS */
+.locationContainer{
+    position: relative;
+}
+
+.imagesGrid{
+    display: grid;
+    height: 550px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: repeat (2, 180px);
+    gap: 10px;
+
+    padding-top: 24px;
+}
+
+.imagesGrid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imgLocation1{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.imgLocation1 img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.imgLocation3 img{
+    border-top-right-radius: 15px;
+}
+
+.imgLocation5 img{
+    border-bottom-right-radius: 15px;
+}
+
+.imagesGrid img:hover{
+    filter: brightness(85%);
+}
+
+.allPhotosBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 25px;
+    padding: 7px 15px;
+    gap: 8px;
+    border-radius: 9px;
+    border: 1px solid;
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+/* CSS INFORMAÇÕES DA LOCAÇÃO */
+.locationInfos{
+    display: flex;
+    width: 60%;
+    padding-top: 32px;
+    line-break: strict;
+}
+
+.locationInfos h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.locationInfos ol{
+    display: flex;
+    list-style-type: none;
+    font-weight: 500;
+    gap: 4px;
+}
+
+.commentsQtd{
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+.commentsQtd a{
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.commentsQtd svg{
+    width: 16px;
+    height: 16px;
+}
