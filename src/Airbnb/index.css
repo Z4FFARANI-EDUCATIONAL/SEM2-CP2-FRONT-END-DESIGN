@@ -25,6 +25,7 @@
     width: 1120px;
     height: 480px; /* Defina a altura desejada */
     align-self: center;
+    padding: 0px 370px;
 }
 iframe {
     position: absolute;
@@ -65,13 +66,191 @@ iframe {
     width: 12px;
     height: 12px;
 }
-.path{
+.showmore path{
     width: 4.34px;
     height: 9px;
 }
 .hostarea{
-    width: 1120px;
-    height: 591.93px;
-    padding: 40px 0px;
+    display: flex;
+}
+.macacos{
+    max-width: 1120px;
+}
+.meetyourhost{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.hostarea2{
+    display: flex-start;
+    max-width: none;
+}
+.arrumar{
+    display: flex;
+}
+.hostgrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px; /* Ajuste este valor conforme necessário */
+}
+.hostprofile{
+    display: flex;
+    flex-direction: column;
+    width: 395;
+    height: 438;
+    gap: 32px;
+}
+.profile-flex-pic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px;
+    border-radius: 10px;
+}
+.profile-flex{
+    display: flex;
+    width: 258px;
+    height: 228px;
+    border: 2px solid #ccc; /* Define uma borda de 2px sólida */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo do contêiner */
+    width: max-content; /* Ajusta a largura do contêiner ao conteúdo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
 
+}
+.profile-container{
+    display: flex;
+    width: 380px;
+    height: 230px;
+}
+.profile-header-flex{
+    display: grid;
+
+
+}
+
+.custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    width: unset;
+    height: unset;
+}
+
+.user-profile img{
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.verified-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    background-color: #DE1163;
+    align-self: center;
+
+}
+.verified-icon {
+    width: 32px;
+    height: 32px;
+    background-color:#DE1163;
+    border-radius: 50%;
+    align-items: center;
+    margin-top: -15px; /* Ajuste a posição conforme necessário */
+}
+.host-name{
+    height: auto;
+    width: 153px;
+    color: #222222;
+    visibility: visible;
+}
+.host-name span{
+    font-size: 31.9px;
+    line-height: 39.1823px;
+    letter-spacing: 0px;
+}
+.custom-span {
+    align-items: center;
+    width: 83.36px;
+    height: 18px;   
+    display: flex;
+}
+
+.custom-span svg {
+    margin-right: 5px; /* Espaçamento entre o ícone SVG e o texto */
+    height: 12px;
+    width: 12px;
+}
+
+.custom-span span {
+    font-size: 14px;
+    color: #222222;
+    width: 67.86px;
+    height: 18px;
+}
+.profile-info{
+    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
+    text-align: center;
+}
+.stat-container {
+    display: flex;
+    flex-direction: column;
+}
+.host-bio {
+    width: 395px;
+    height: auto; /* Ajustado para permitir altura dinâmica */
+}
+
+.host-bio2 svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.host-bio2 {
+    width: 395px;
+    margin: 0 0 12px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column; /* Ajustado para empilhar os elementos verticalmente */
+}
+
+.biotext {
+    margin-top: 20px;
+    line-height: 1.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    width: 395px;
+    height: 48px;
+}
+
+.hostthings {
+    display: flex;
+    flex-direction: column; /* Alinha os itens um embaixo do outro */
+    width: 395px;
+    gap: 16px;
+}
+
+.hostwork, .hostlanguage {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    width: 100%; /* Mantém a largura total */
+}
+
+.work, .language {
+    padding: 3px 0 0;
+    color: #222222;
+    font-size: 16px;
+    line-height: 23px; /* Garante que o texto tenha uma altura consistente */
 }
