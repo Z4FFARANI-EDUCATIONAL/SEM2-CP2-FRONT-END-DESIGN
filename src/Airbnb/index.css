@@ -1,12 +1,18 @@
+.maincontent{
+    padding: 0px 80px;
+    justify-content: center;
+}
+
+
 .maparea-1{
-    width: 2114.44px;
+    width: 1120px;
     height: 755px;
     padding: 0px 80px;
 
 }
 
 .maparea{
-    width: 1120px;
+    max-width: 1120px;
     height: 754px;
     padding: 48px 0px;
 }
@@ -31,7 +37,7 @@ iframe {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1120px;
     height: 100%;
 }
 .maptext{
@@ -72,54 +78,148 @@ iframe {
 }
 .hostarea{
     display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
 }
-.macacos{
+.hostarea1{
     max-width: 1120px;
+    height: 593px;
 }
 .meetyourhost{
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 1120px;
+    height: 592px;
+}
+.meetyourhost2{
+    max-width: none;
+    width: 1120px;
+    height: 512px;
 }
 .hostarea2{
     display: flex-start;
     max-width: none;
 }
+.receba{
+    width: 1120px;
+    height: 26px;
+    font-size: 22px;
+    color: #222222;
+    gap: 23px;
+}
 .arrumar{
     display: flex;
+    width: 1120px;
+    height: 462px;
+    padding: 0px 0px 24px;
+}
+.arrumar2{
+    width: 1120px;
+    height: 438px;
+    padding-top: 48px;
 }
 .hostgrid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px; /* Ajuste este valor conforme necessário */
+    grid-template-columns: 395px 661px;
+    gap: 64px;
+    width: 1120px;
+    height: 438px;
 }
 .hostprofile{
     display: flex;
     flex-direction: column;
-    width: 395;
-    height: 438;
+    width: 395px;
+    height: 438px;
     gap: 32px;
+}
+.host-bio {
+    width: 395px;
+    height: 176px;
+}
+.hostinfo{
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    height: 438px;
+    justify-content:space-between;
+}
+.superhost{
+    width: 661px;
+    height: 80px;
+
+}
+.superhost-flex{
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    height: 80px;
+    gap: 15px;
+
+}
+.supereduardo{
+    width: 661px;
+    height: 24px;
+    font-size: 18px;
+    color: #222222;
+}
+.superhost-flex span{
+    font-size: 16px;
+    color: #222222;
+    width: 631.41px;
+    height: 41px;
+}
+.eduinfo{
+    display: flex;
+    flex-direction: column;
+    width: 661px;
+    height: 80px;
+    gap: 15px;
+}
+.eduinfo-divs{
+    font-size: 16px;
+    color: #222222;
+}
+.hostbutton{
+    width: 661px;
+    height: 48px;
+}
+.hostbutton1{
+    background-color:#222222 ;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
 }
 .profile-flex-pic{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    width: 258px;
+    height: 228px;
+    gap: 9px;
     align-items: center;
-    border: 2px;
-    border-radius: 10px;
+    align-content: center;
+    justify-content: center;
 }
 .profile-flex{
     display: flex;
-    width: 258px;
-    height: 228px;
-    border: 2px solid #ccc; /* Define uma borda de 2px sólida */
+    width: 380px;
+    height: 230px;
+    gap: 26px;
+    border: 2px solid #E7E7E7; /* Define uma borda de 2px sólida */
     border-radius: 10px; /* Bordas arredondadas */
-    padding: 10px; /* Espaçamento interno */
     background-color: #f9f9f9; /* Cor de fundo do contêiner */
-    width: max-content; /* Ajusta a largura do contêiner ao conteúdo */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra */
-
 }
 .profile-container{
-    display: flex;
     width: 380px;
     height: 230px;
 }
@@ -130,6 +230,8 @@ iframe {
 }
 
 .custom-button {
+    width: unset;
+    height: unset;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,39 +239,47 @@ iframe {
     border: none;
     padding: 0;
     cursor: pointer;
-    width: unset;
-    height: unset;
+    position: relative; /* Para que a .verified-icon seja posicionada em relação a este botão */
 }
-
+.user-profile{
+    position: relative;
+}
 .user-profile img{
     width: 104px;
     height: 104px;
+    align-self: center;
+    align-content: center;
     border-radius: 50%;
     background-size: cover;
     object-fit: cover;
+}
+
+.verified-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #DE1163;
+    border-radius: 50%;
+    margin: 0;
 }
 
 .verified-icon svg {
     width: 16px;
     height: 16px;
     fill: white;
-    background-color: #DE1163;
-    align-self: center;
-
-}
-.verified-icon {
-    width: 32px;
-    height: 32px;
-    background-color:#DE1163;
-    border-radius: 50%;
-    align-items: center;
-    margin-top: -15px; /* Ajuste a posição conforme necessário */
 }
 .host-name{
     height: auto;
     width: 153px;
     color: #222222;
     visibility: visible;
+    align-self: center;
+    align-content: center;
 }
 .host-name span{
     font-size: 31.9px;
@@ -178,7 +288,9 @@ iframe {
 }
 .custom-span {
     align-items: center;
-    width: 83.36px;
+    align-self: center;
+    align-content: center;
+    width: 83.86px;
     height: 18px;   
     display: flex;
 }
@@ -188,6 +300,10 @@ iframe {
     height: 12px;
     width: 12px;
 }
+.custom-span path{
+    width: 8.25px;
+    height: 11.25;
+}
 
 .custom-span span {
     font-size: 14px;
@@ -196,18 +312,48 @@ iframe {
     height: 18px;
 }
 .profile-info{
-    margin-top: 10px; /* Espaçamento entre a imagem e o texto */
-    text-align: center;
-}
-.stat-container {
     display: flex;
     flex-direction: column;
-}
-.host-bio {
-    width: 395px;
-    height: auto; /* Ajustado para permitir altura dinâmica */
-}
+    align-self: center;
+    align-content: center;
+    width: 153px;
+    height: 57.17px;
 
+}
+.profile-stats{
+    display: flex;
+    flex-direction: column;
+    width: 96px;
+    height: 176px;
+    align-self: center;
+    align-content: center;
+    gap: 12.5px;
+    justify-content: center;
+
+}
+.stat-container {
+    width: 96px;
+    height: 42px;
+}
+.stat-container2{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.stat-value{
+    display: flex;
+    font-size: 22px;
+}
+.stat-label{
+    font-size: 10px;
+    width: auto;
+    height: 14px;
+}
+.custom-divider{
+    width: 96px;
+    height: 1px;
+}
 .host-bio2 svg {
     width: 24px;
     height: 24px;
@@ -220,10 +366,10 @@ iframe {
     gap: 32px;
     display: flex;
     flex-direction: column; /* Ajustado para empilhar os elementos verticalmente */
+    justify-content: center;
 }
 
 .biotext {
-    margin-top: 20px;
     line-height: 1.5rem;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -253,4 +399,335 @@ iframe {
     color: #222222;
     font-size: 16px;
     line-height: 23px; /* Garante que o texto tenha uma altura consistente */
+}
+.payment-protect {
+    display: flex;
+    align-items: center;
+    width: 661px;
+    max-height: 49px;
+    padding: 24px 0px 0px;
+    justify-content:center;
+}
+
+.payment-svg svg{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px; /* Adicione um espaço entre o SVG e o texto */
+}
+.payment-svg path{
+    width: 15px;
+    height: 18.2px;
+}
+
+.payment-protect p {
+    font-size: 12px;
+    color: #222222;
+    width: auto;
+    height: 24px;
+    white-space: nowrap;
+}
+.placeinfo{
+    max-width: 1120px;
+}
+.placeinfo::after {
+    display: flex;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 0px;
+    background-color: white;
+}
+.placeinfo2{
+    display: flex;
+    flex-direction: row;
+
+    padding: 0px 80px;
+
+
+}
+.placeinfo3{
+    max-width: 1120px;
+    padding: 0px 80px;
+
+}
+.polices-default{
+    padding-top: 48px;
+    padding-bottom: 48px;
+    height: 354px;
+    justify-content: center;
+
+}
+.polices-default2{
+    width: 1120px;
+    height: 258px;
+}
+.polices-title{
+    width: auto;
+    height: 50px;
+    padding-bottom: 3px;
+}
+.polices-title2{
+    width: auto;
+    height: 26px;
+}
+.polices-title3 h2{
+    font-size: 22px;
+    color: #222222;
+}
+.placeinfo4{
+    display: flex;
+    flex-direction: row;
+    width: 1136px;
+    height: 208px;
+}
+.houserules, .house-secury-property, .cancel-policy {
+    flex: 1; /* Isso vai garantir que as três colunas ocupem o mesmo espaço */
+    padding: 0px 8px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+}
+
+.houserules{
+    padding: 0px 8px;
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+}
+.houserules2{
+    width: auto;
+    height: 168px;
+}
+.houserulestitle{
+    width: auto;
+    height: 20px;
+}
+.houserulestitle h3{
+    width: auto;
+    height: 20px;
+    color: #222222;
+    font-size: 16px;
+}
+.housecheckin{
+    width: auto;
+    height: 20px;
+}
+.housecheckin2{
+    display: flex;
+    width: auto;
+    height: 20px;
+    margin: 0px 0px 8px;
+}
+.housecheckin2 span {
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 20px;
+}
+.housecheckout{
+    width: auto;
+    height: 20px;
+}
+.housecheckout2{
+    display: flex;
+    width: auto;
+    height: 20px;
+    margin: 0px 0px 8px;
+}
+.housecheckout2 span{
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 20px;
+}
+.housecapacity{
+    width: auto;
+    height: 20px;
+}
+.housecapacity2{
+    display: flex;
+    width: auto;
+    height: 20px;
+    margin: 0px 0px 8px;
+}
+.housecapacity2 span{
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 20px;
+}
+.showmorebutton2{
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.house-secury-property{
+    padding: 0px 8px;
+    height: 208px;
+}
+.house-secury-property2{
+    width: auto;
+    height: 208px;
+}
+.house-secury-property-title{
+    width: auto;
+    height: 20px;
+}
+.house-secury-property-title h3{
+    width: auto;
+    height: 20px;
+    color: #222222;
+    font-size: 16px;
+}
+.house-secury-property-alarm{
+    width: auto;
+    height: 40px;
+}
+.house-secury-property-alarm2{
+    display: flex;
+    width: auto;
+    height: 40px;
+    margin: 0px 0px 8px;
+}
+.house-secury-property-alarm2 span{
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 40px;
+}
+.house-secury-property-pool{
+    width: auto;
+    height: 40px;
+}
+.house-secury-property-pool2{
+    display: flex;
+    width: auto;
+    height: 40px;
+    margin: 0px 0px 8px;
+}
+.house-secury-property-pool2 span{
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 40px;
+}
+.house-secury-property-lake{
+    width: auto;
+    height: 20px;
+}
+.house-secury-property-lake2{
+    display: flex;
+    width: auto;
+    height: 20px;
+    margin: 0px 0px 8px;
+}
+.house-secury-property-lake2 span{
+    font-size: 16px;
+    color: #222222;
+    width: auto;
+    height: 20px;
+}
+.cancel-policy{
+    padding: 0px 8px;
+    height: 208px;
+}
+.cancel-policy2{
+    width: auto;
+    height: 116px;
+}
+.cancel-policy-title{
+    width: auto;
+    height: 20px;
+}
+.cancel-policy-title h3{
+    width: auto;
+    height: 20px;
+    color: #222222;
+    font-size: 16px;
+}
+.cancel-policy-consult{
+    width: auto;
+    height: 40px;
+    margin: 0px 0px 16px;
+}
+.cancel-policy-consult2 span{
+    width: auto;
+    height: 41px;
+}
+.itemscope0::before {
+    content: "";
+    display: block;
+    color: white;
+    height: 0px;
+    display: flex;
+}
+.itemscope1{
+    display: flex;
+}
+.itemscope2{
+    width: 1903px;
+    height: 93px;
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    background-color: rgb(247, 247, 247); 
+    -gp-section-background-color: #F7F7F7;
+}
+.itemscope3{
+    width: 1903px;
+    height: 84px;
+}
+.itemscope4{
+    display: flex;
+    flex-direction: row;
+    padding: 0px 80px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha */
+}
+
+.itemscope5, .itemscope6, .itemscope-nav {
+    flex: 1;
+    height: 84px;
+    min-width: 0; /* Permite que o flexbox funcione corretamente */
+}
+.itemscope-nav{
+    display: flex;
+    flex-direction: row;
+}
+.li {
+    height: 20px;
+    list-style: none;
+    margin: 0; /* Remove qualquer margem que possa interferir */
+}
+
+.itemscope-nav span{
+    color: #222222;
+    font-size: 14px;
+    height: 18px;
+}
+.footer{
+    padding-bottom: 0px;
+}
+.footer1{
+    width: 1280px;
+    height: 375px;
+    margin: 0px 311.5px;
+    padding: 0px 80px;
+}
+.footer2{
+    width: 1220px;
+    height: 375px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(368px);
+}
+.footer-text{
+    padding: 48px 0px;
+    height: 306px;
+}
+.footer-text h3{
+    font-size: 14px;
+    margin: 0px 0px 12px;
+    color: #222222;
 }
