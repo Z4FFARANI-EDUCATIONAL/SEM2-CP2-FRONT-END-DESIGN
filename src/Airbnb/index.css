@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
 .maincontent{
     padding: 0px 80px;
     justify-content: center;
@@ -708,10 +714,13 @@ iframe {
 .footer{
     padding-bottom: 0px;
 }
+.footer-padding{
+    padding: 0px 40px; 
+    margin: 0px 34.5px;
+}
 .footer1{
     width: 1280px;
     height: 375px;
-    margin: 0px 311.5px;
     padding: 0px 80px;
 }
 .footer2{
@@ -720,23 +729,42 @@ iframe {
 }
 .footer-grid{
     width: 1120px;
-    height: 306px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    grid-row: 306px;
     gap: 8px;
 }
-.footer-text{
+.service-grid{
+    display: grid;
+    align-items: start;
+    text-align: start;
     padding: 48px 0px;
     height: 306px;
+    list-style: none;
+    color: #222222; 
 }
-.footer-text h3{
-    font-size: 14px;
-    margin: 0px 0px 12px;
+.service-grid h3{
+    height: 18px;
+    margin-bottom: 12px;
+}
+.hosting-grid{
+    display: grid;
+    align-items: start;
+    text-align: start;
+    padding: 48px 0px;
+    height: 306px;
+    list-style: none;
     color: #222222;
+
+
 }
-.footer-text2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.airbnb-grid{
+    display: grid;
+    align-items: start;
+    text-align: start;
+    padding: 48px 0px;
+    height: 306px;
+    list-style: none;
+    color: #222222;
+
 }
