@@ -17,7 +17,9 @@ header{
     width: 100%;
     height: 100%;
     font-size: 14px;
-    padding: 0 370px;
+    padding: 0 20%;
+    box-sizing: border-box;
+    
 }
 
 header .logo{
@@ -40,27 +42,31 @@ header .logo img{
     justify-content: center;
     align-items: center;
     border: 1px solid rgba(184, 184, 184, 0.425);
-    box-shadow: 0px 0px 1px rgb(184, 184, 184);
+    box-shadow: 0px 1px 3px rgba(181, 181, 181, 0.61);
     border-radius: 90px;
 }
 
 .headerSearch:hover{
-    box-shadow: 0px 1px 5px rgba(181, 181, 181, 0.61);
+    box-shadow: 0px 2px 6px rgba(168, 168, 168, 0.61);
     transition: 0.2s;
+}
+
+.headerSearchSpacing{
+    padding: 0 24px;
 }
 
 .searchBtn{
     height: 48px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
     background-color: transparent;
-    font-size: 14px;
 }
 
 .searchBtnText{
-    padding: 0 22px;
+    padding: 0 15px;
     white-space: nowrap;
+    font-size: 13px;
     
 }
 .searchBtn.first{
@@ -98,6 +104,11 @@ header .logo img{
     font-weight: 100;
 }
 
+.headerRightSideContent{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 
 .anuncioAnchor{
     display: flex;
@@ -112,18 +123,35 @@ header .logo img{
     border-radius: 90px;
     border: none;
     text-decoration: none;
-    padding: 0 10px;
     line-break: strict;
+    padding: 12px;
 }
 
+.anuncioAnchor:hover{
+    background-color: #F7F7F7;
+}
+
+.globeSvg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50px;
+}
 .globeSvg svg{
     padding: 0 5px;
+}
+
+.globeSvg:hover{
+    background-color: #F7F7F7;
+
 }
 
 .profileBtn{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     cursor: pointer;
     height: 48px;
@@ -151,11 +179,21 @@ header .logo img{
     color: #6a6a6a;
 }
 
-/* CSS TITULO DA LOCAÇÃO */
-main{
-    padding: 0 370px;
-    flex-wrap: nowrap;
+/* DIVISÃO DA PAGINA EM ESQUERDA(60%) E DIREITA(40%) */
+.mainContentLeftSide{
+    width: 60%;
+}
 
+
+/* CSS TITULO DA LOCAÇÃO */
+.mainDividedContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    padding: 0 20%;
+    flex-wrap: nowrap;
 }
 
 .locationTitle{
@@ -188,10 +226,12 @@ main{
     color: rgb(27, 27, 27);
     padding: 8px;
     font-size: 14px;
+    border-radius: 10px;
 }
 
 .save-share-btns:hover{
     color: black;
+    background-color: #f7f7f7;
 }
 
 .save-share-btns svg{
@@ -210,7 +250,6 @@ main{
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-template-rows: repeat (2, 180px);
     gap: 10px;
-
     padding-top: 24px;
 }
 
@@ -263,7 +302,6 @@ main{
 /* CSS INFORMAÇÕES DA LOCAÇÃO */
 .locationInfos{
     display: flex;
-    width: 60%;
     padding: 32px 0;
     line-break: strict;
 }
@@ -300,7 +338,6 @@ main{
 /* CSS HOST */
 .host{
     border-top: solid 1px rgba(146, 146, 179, 0.26);
-    width: 60%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -331,7 +368,6 @@ main{
     display: flex;
     flex-direction: column;
     gap: 5px;
-
 }
 
 .host h1{
@@ -344,7 +380,66 @@ main{
     color: #595959;
 }
 
+/* Atrativos da Acomodacao (abaixo do perfil do host) */
 
+.accommodationAttractions{
+    padding: 32px 0px;
+    border-top: solid 1px rgba(146, 146, 179, 0.26);
+}
+
+.accommodationAttractions li{
+    display: flex;
+    justify-content: start;
+    gap: 30px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+}
+
+.accommodationAttractions li h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.accommodationAttractions li p{
+    font-size: 14px;
+}
+
+/* Descrição da acomodação */
+.accommodationDescription{
+    border-top: solid 1px rgba(146, 146, 179, 0.26);
+    padding-top: 32px;
+    
+}
+
+.translateBox{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #F7F7F7;
+    padding: 16px;
+    gap: 3px;
+    border-radius: 8px;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 18px;
+    box-sizing: border-box;
+}
+
+.showOriginalBtn{
+    background: none;
+    border: none;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 18px;
+}
+
+.description{
+    line-height: 1.5rem;
+    font-weight: 500;
+    padding: 32px 0 48px 0;
+}
 
 
 
@@ -363,10 +458,6 @@ main{
 /* CSS KAIRO */
 /* Adicionar uma linha acima de 40px */
 /* Adicionar fontes e tamanho */
-.containerInfos{
-    width: 60%;
-}
-
 .elementosdoQuarto {
     display: flex;
     flex-direction: column;
@@ -390,7 +481,7 @@ main{
 }
 
 /* Mudei o tamanho das imagens para ficar em um tamanho similar ao conteiner e assim esconder a  */
-/* Tem como deixar essa barra de rolamento inivisível, mas ai não teria como saber que existe ela e teriamos que adicionar a função de rolamento nas próprias imagens */
+/* Tem como deixar essa barra de rolamento invisível, mas ai não teria como saber que existe ela e teriamos que adicionar a função de rolamento nas próprias imagens */
 .carrossel {   
     display: flex;
     width: 100%;
@@ -581,7 +672,7 @@ main{
 
 /* Mundanças no conteiner de avaliações */
 /* CSS COMENTARIOS */
-.comentsSection{
+.commentsSection{
     padding: 48px 0;
     border-top: 1px solid #9292922d;    
 }
@@ -668,6 +759,9 @@ main{
 }
 
 .showMoreBtn{
+    display: flex;
+    gap: 5px;
+    align-items: center;
     background: none;
     border: none;
     text-decoration: underline;
@@ -680,3 +774,165 @@ main{
 
 
 /* Caso seja necessário, adicionar o restante do comentário utilizando o botão para mostrar o restante do comentário. */
+
+
+/* LADO DIREITO DA PAGINA CSS(BOTÃO PRINCIPALMENTE */
+.mainContentRightSide{
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding-top: 32px;
+}
+
+.booking{
+    padding: 24px;
+    border-radius: 10px;
+    border: 1px solid rgba(184, 184, 184, 0.425);
+    box-shadow: 0px 5px 10px rgba(181, 181, 181, 0.61);
+    
+}
+
+.nightPrice{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+
+}.nightPrice h1{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.nightPrice span{
+    font-size: 16px;
+}
+
+.checkInOut{
+    display: flex;
+    width: 100%;
+    height: 56px;
+    margin-top: 15px;
+}
+
+.checkBtn{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    cursor: pointer;
+    padding: 8px 12px 10px;
+    background-color: transparent;
+    border: 1px solid rgba(119, 119, 119, 0.705);
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.checkBtn span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.checkBtn.In{
+    border-top-left-radius: 10px;
+    border-right: none;
+}
+
+.checkBtn.Out{
+    border-top-right-radius: 10px;
+}
+
+.guestsBtn{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 56px;
+    padding: 8px 36px 10px 12px;
+    cursor: pointer;
+    background-color: transparent;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid rgba(119, 119, 119, 0.705);
+    border-top: none;
+    font-size: 10px;
+    font-weight: bold;
+    
+}
+
+.guestsBtn span{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.guestsBtn div{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.guestsBtn svg{
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+}
+
+.bookingBtn{
+    width: 100%;
+    height: 48px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    background: rgb(229,29,78);
+    background: linear-gradient(90deg, rgba(229,29,78,1) 0%, rgba(215,5,101,1) 100%);
+    cursor: pointer;
+}
+
+.bookingBtn:hover{
+    transition: 0.5s;
+    background: rgb(229,29,78);
+    background: linear-gradient(270deg, rgba(229,29,78,1) 0%, rgba(215,5,101,1) 100%);
+} 
+
+p.warning{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.planPrices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+}
+
+p.priceUnderline{
+    text-decoration: underline;
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: solid 1px rgba(146, 146, 179, 0.26);
+    font-weight: 500;
+}
+
+.report{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 15px;
+    color: #6A6A6A;
+}
+
+.report a{
+    color: #6A6A6A;
+    font-weight: 600;
+    font-size: 14px;
+}
