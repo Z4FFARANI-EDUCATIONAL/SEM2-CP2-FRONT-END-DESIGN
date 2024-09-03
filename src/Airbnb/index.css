@@ -138,6 +138,7 @@ header .logo img{
     width: 42px;
     height: 42px;
     border-radius: 50px;
+    cursor: pointer;
 }
 .globeSvg svg{
     padding: 0 5px;
