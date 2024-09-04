@@ -240,7 +240,7 @@ main{
 }
 
 /* CSS GRID DE IMAGENS */
-.locationContainer{
+.locationConteiner{
     position: relative;
 }
 
@@ -441,19 +441,6 @@ main{
     font-weight: 500;
     padding: 32px 0 48px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* CSS KAIRO */
@@ -1027,18 +1014,18 @@ p.priceUnderline{
     gap: 5px;
 }
 
-.hostPhotoContainer{
+.hostPhotoConteiner{
     position: relative;
 }
 
-.hostPhotoContainer img{
+.hostPhotoConteiner img{
     width: 104px;
     height: 104px;
     border-radius: 90px;
     margin-bottom: 10px;
 }
 
-.hostPhotoContainer div{
+.hostPhotoConteiner div{
     position: absolute;
     display: flex;
     align-items: center;
@@ -1104,6 +1091,7 @@ p.priceUnderline{
 
 .showMoreBtn.hostBioBtn{
     margin-top: 16px;
+    padding-bottom: 24PX;
 }
 
 .aboutHostRight{
@@ -1153,4 +1141,167 @@ p.priceUnderline{
     font-size: 11px;
     padding-top: 24px;
     border-top: 1px solid #9292922d;
+}
+
+/* VOCÊ DEVERIA SABER */
+.youShouldKnow{
+    padding: 40PX 0;;
+    border-top: 1px solid #9292922d;
+}
+
+.youShouldKnowTitle{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 24px;
+}
+
+.youShouldKnowLists{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: start;
+    width: 100%;
+    gap: 5%;
+    font-size: 16px;
+}
+
+.youShouldKnowLists h1{
+    font-size: 16px;
+    padding-bottom: 16px;
+    font-weight: 600;
+}
+
+.youShouldKnowLists ul{
+    list-style-type: none;
+}
+
+.youShouldKnowLists ul li{
+    padding-bottom: 16px;
+    
+}
+
+/* FOOTER */
+
+.regionConteiner{
+    width: 100%;
+    background-color: #f7f7f7;
+    padding: 0 20%;
+    border-top: 1px solid #9292922d;
+    border-bottom: 1px solid #9292922d;
+    
+}
+
+.regionConteiner div{
+    display: flex;
+    align-items: center;
+    padding: 32px 0 48px 0;
+    gap: 10px;
+}
+
+.regionConteiner a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+}
+
+.regionConteiner a:hover{
+    text-decoration: underline;
+}
+
+.footerServices{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: start;
+    gap: 5%;
+    font-size: 14px;
+    padding: 48px 20%;
+    background: #f7f7f7;
+}
+
+.footerServices h1{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footerServices ul{
+    list-style: none;
+}
+
+.footerServices li{
+   padding-top: 14px;
+}
+
+.footerServices a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.footerServices a:hover{
+    text-decoration: underline;
+}
+
+.footerRightsAndMedias{
+    padding: 0 20%;
+    background-color: #F7F7F7;
+}
+
+.footerRightsAndMediasConteiner{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #9292922d;
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
+.footerRightsAndMedias .leftSide{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+} 
+
+.footerRightsAndMedias .leftSide a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.footerRightsAndMedias .leftSide a:hover{
+    text-decoration: underline;
+
+}
+
+.footerRightsAndMedias .rightSide{
+    display: flex;
+    gap: 15px;
+}
+
+.footerRightsAndMedias .rightSide a{
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    gap: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footerRightsAndMedias .rightSide a:hover{
+    text-decoration: underline;
+}
+
+.footerRightsAndMedias .rightSide span{
+    font-size: 16px;
+}
+
+
+.footerRightsAndMedias ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.footerRightsAndMedias li{
+    margin: 0 0 0 18px;
 }
