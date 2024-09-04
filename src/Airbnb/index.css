@@ -973,5 +973,184 @@ p.priceUnderline{
 /* SOBRE O HOST */
 .aboutHost{
     width: 100%;
-    height: 500px;
+    padding: 40px 0;
+    border-top: 1px solid #9292922d;
+}
+
+.aboutHostLeft{
+    width: 35%;
+}
+
+.hostCardTitle{
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 24px;
+
+}
+
+.hostContentBox{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hostCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border: none;
+    box-shadow: 0px 5px 15px 5px rgba(181, 181, 181, 0.452);
+    border-radius: 25px;
+    padding: 28px 0;
+}
+
+.hostPhoto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.hostPhoto h1{
+    font-size: 28px;
+    padding-bottom: 2px;
+}
+
+.hostPhoto p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    gap: 5px;
+}
+
+.hostPhotoContainer{
+    position: relative;
+}
+
+.hostPhotoContainer img{
+    width: 104px;
+    height: 104px;
+    border-radius: 90px;
+    margin-bottom: 10px;
+}
+
+.hostPhotoContainer div{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    width: 32px;
+    right: 0;
+    bottom: 0;
+    background: rgb(229,29,78);
+    background: linear-gradient(90deg, rgba(229,29,78,1) 0%, rgba(215,5,101,1) 100%);
+    border-radius: 90px;
+    margin-bottom: 20px;
+
+}
+
+
+.hostScore{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+
+.hostScore div{
+    margin-right: 8px;
+}
+
+.hostScore h1{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.hostScore p{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.hostScore hr{
+    border: none;
+    border-top: 1px solid  #6b6b6b2d;
+}
+
+.specialty .hostJob{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 32px 0 16px 0;
+    font-weight: 500;
+}
+
+.specialty .hostLanguage{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 32px;
+    font-weight: 500;
+}
+
+.hostBioText p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.showMoreBtn.hostBioBtn{
+    margin-top: 16px;
+}
+
+.aboutHostRight{
+    width: 58%;
+}
+
+.aboutHostRight h1{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 16px;
+}
+
+.aboutHostRight p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.aboutHost.answerRate{
+    padding-bottom: 16px;
+}
+
+.aboutHostRight div{
+    padding-bottom: 32px;
+}
+
+.sendMessageHost{
+    background-color: #222222;
+    color: white;
+    font-weight: 600;
+    border: none;
+    padding: 14px 24px;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 32px;
+}
+
+.sendMessageHost:hover{
+    background-color: #000000;
+}
+
+
+.protectionAdvice p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
+    padding-top: 24px;
+    border-top: 1px solid #9292922d;
 }
