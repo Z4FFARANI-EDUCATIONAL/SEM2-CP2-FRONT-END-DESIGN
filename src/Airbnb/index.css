@@ -674,8 +674,8 @@ main{
 /* Mundanças no conteiner de avaliações */
 /* CSS COMENTARIOS */
 .commentsSection{
-    padding: 48px 0;
-    border-top: 1px solid #9292922d;    
+    padding: 48px 0 96px 0;
+    border-top: 1px solid #9292922d;
 }
 
 .comentarioHead{
@@ -771,11 +771,7 @@ main{
     cursor: pointer;
     margin-top: 8px;
 }
-
-
-
 /* Caso seja necessário, adicionar o restante do comentário utilizando o botão para mostrar o restante do comentário. */
-
 
 /* LADO DIREITO DA PAGINA CSS(BOTÃO PRINCIPALMENTE */
 .mainContentRightSide{
@@ -912,6 +908,7 @@ p.warning{
 
 p.priceUnderline{
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .total{
@@ -936,4 +933,45 @@ p.priceUnderline{
     color: #6A6A6A;
     font-weight: 600;
     font-size: 14px;
+}
+
+/* IFRAME(MAPA GOOGLE) */
+.map{
+    width: 100%;
+    border-top: 1px solid #9292922d;
+    padding: 48px 0;
+}
+
+.map iframe{
+    width: 100%;
+    height: 480px;
+    border-radius: 8px;
+    
+}
+
+.map h1{
+    font-size: 22px;
+    padding-bottom: 24px;
+    font-weight: 600;
+}
+
+
+.map h2{
+    font-size: 16px;
+    padding: 24px 0 24px 0;
+    font-weight: 600;
+}
+
+.map p{
+    font-size: 16px;
+}
+
+.showMoreBtn.mapIframe{
+    margin-top: 16px;
+}
+
+/* SOBRE O HOST */
+.aboutHost{
+    width: 100%;
+    height: 500px;
 }
