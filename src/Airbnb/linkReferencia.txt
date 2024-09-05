@@ -1,1 +1,1 @@
-https://www.airbnb.com.br/rooms/43811303?adults=1&category_tag=Tag%3A5348&children=0&enable_m3_private_room=true&infants=0&pets=0&photo_id=1020223572&search_mode=flex_destinations_search&check_in=2024-08-20&check_out=2024-08-25&source_impression_id=p3_1724117004_P3zc2o-OkLTkI0qD&previous_page_section_name=1000
+https://www.airbnb.com.br/rooms/43811303?source_impression_id=p3_1725563193_P3JqSKx1Z7hlryIk&check_in=2024-10-01&guests=1&adults=1&check_out=2024-10-06
