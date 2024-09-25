@@ -1,0 +1,132 @@
+.slide {
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+    margin-top: -37px;
+}
+
+.slide-buttons {
+    width: 397px;
+    position: absolute;
+    margin: -284px 0px 0px 0px;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slide-buttons-right {
+    display: flex;
+    gap: 14px;
+}
+
+.slide-icons {
+    background-color: white;
+    padding: 9px;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 5px;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.breath {
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.more-info {
+    font-size: 0.9rem;
+    margin-bottom: 7px;
+}
+
+a {
+    color: black;
+    font-weight: 500;
+}
+
+.location-info {
+    margin-bottom: 25px;
+}
+
+.location-info-details {
+    display: flex;
+    gap: 5px;
+}
+
+.host {
+    border-top: solid 1px #9292922d;
+    border-bottom: solid 1px #9292922d;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.info-host {
+    font-size: 0.8rem;
+}
+
+.certificate {
+    display: flex;
+    align-items: end;
+}
+
+.img-host {
+    height: 45px;
+    border-radius: 50px;
+}
+
+.medal {
+    position: absolute;
+    padding-left: 28px;
+}
+
+
+@media screen and (max-width: 375px) {
+    .slide {
+        height: 287px;
+    }
+
+    .slide-buttons {
+        width: 347px;
+        margin: -251px 0px 0px 0px;
+    }
+
+    .more-info {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .slide {
+        height: 250px;
+    }
+
+    .slide-buttons {
+        width: 292px;
+        margin: -214px 0px 0px 0px;
+    }
+
+    .more-info {
+        font-size: 0.7rem;
+        margin-bottom: 8px;
+    }
+
+    .location-info-details {
+        font-size: 0.9rem;
+    }
+}
+
