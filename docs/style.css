@@ -1,23 +1,24 @@
 /* CSS HEADER INICIO */
 body{
-    min-width: 850px;
+    min-width: 850px;   
+}
+
+.breath {
+    padding: 0;
 }
 
 header{
     display: flex;
-    margin: 0 auto;
     height: 80px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 14px;
 }
 
-.headerCont{
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    margin: 0 auto;
+
+
+.rightContent {
+    display: flex;
 }
 
 header .logo{
@@ -26,8 +27,8 @@ header .logo{
     align-items: center;
     max-width: 118px;
     height: 64px;
-    margin-right: 180px;
     cursor: pointer;
+    padding-right: 180px;
 }
 
 header .logo img{
@@ -205,7 +206,7 @@ main{
 .locationTitle{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     width: 100%;
     padding-top: 24px;
     line-break: strict;
@@ -420,7 +421,6 @@ main{
 
 .translateBox{
     display: flex;
-    justify-content: start;
     align-items: center;
     background-color: #F7F7F7;
     padding: 16px;
@@ -429,7 +429,6 @@ main{
     white-space: nowrap;
     width: 100%;
     line-height: 18px;
-    box-sizing: border-box;
 }
 
 .showOriginalBtn{
@@ -478,6 +477,7 @@ main{
     overflow: hidden;
     gap: 15px;
     overflow-x: auto;
+    padding: 0px 0px 25px 0px;
 }
 
 .quadro h3{
@@ -551,6 +551,13 @@ main{
 }
 
 .geralInfo li{
+    display: flex;
+    padding: 0 8px 16px 8px;
+    width: 100%;
+    gap: 15px;
+}
+
+.geralInfo-right li {   
     display: flex;
     padding: 0 8px 16px 8px;
     width: 100%;
@@ -660,7 +667,7 @@ main{
 
 /* CSS COMENTARIOS */
 .commentsSection{
-    padding: 48px 0 96px 0;
+    padding: 48px 0 50px 0;
     border-top: 1px solid #9292922d;
 }
 
@@ -819,6 +826,7 @@ main{
 
 .checkBtn.Out{
     border-top-right-radius: 10px;
+    padding: 8px 5px;
 }
 
 .guestsBtn{
@@ -1143,7 +1151,7 @@ p.priceUnderline{
 
 /* VOCÊ DEVERIA SABER */
 .youShouldKnow{
-    padding: 40PX 0;;
+    padding: 40px 0px;
     border-top: 1px solid #9292922d;
 }
 
@@ -1180,7 +1188,8 @@ p.priceUnderline{
 
 /* FOOTER */
 footer{
-    background: #f7f7f7
+    background: #f7f7f7;    
+    border-top: 1px solid #9292922d;
 }
 
 
@@ -1260,6 +1269,13 @@ footer{
     justify-content: space-between;
 }
 
+.organizecopy {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 .footerRightsAndMedias .leftSide{
     display: flex;
     align-items: center;
@@ -1312,13 +1328,134 @@ footer{
     margin: 0 0 0 18px;
 }
 
-@media screen and (min-width: 768px) {
-    .mainContentRightSide{
-        opacity: 0;
+
+/* Parte de responsividade considerando os principais breakpoints */
+
+@media screen and (max-width: 1024px) {
+    .breath {
+        padding: 0px 40px;
     }
 
-    .mainDividedContent {
-        justify-content: center;
+    header {
+        justify-content: space-between;
+    }
+
+    header .logo {
+        padding-right: 0px;
+        content: url(../public/assets/images/closedLogo.png);
+        height: 36px
+    }
+
+    .geralInfo-right{
+        display: none;
+    }
+
+    .imgCalendario {
+        content: url(../public/assets/images/closedCalendar.png);
+        height: 530px;
+    }
+
+    footer {
+        padding: 0px 40px;
+    }
+
+    .footerRightsAndMediasConteiner {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .leftSide {
+        padding: 0px 0px 10px 0px;
+    }
+
+    .organizecopy {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+
+    .translateBox {
+        flex-direction: column;
+    }
+
+    .allPhotosBtn {
+        width: 180px;
+    }
+
+    .pontoo {
+        display: none;
     }
 }
 
+
+@media screen and (max-width: 768px) {
+    header .logo {
+        padding-right: 0px;
+        content: url(../public/assets/images/airbnbHeaderLogo.png);
+        height: 36px
+    }
+
+    .anuncioAnchor {
+        display: none;
+    }
+
+    .locationTitle h1 {
+        width: 500px;
+    }
+
+    .locationTitle {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .allPhotosBtn {
+        width: 150px;
+    }
+
+    .imagesGrid {
+        height: 400px;
+    }
+
+    .imgCalendario {
+        height: 400px;
+    }
+
+    .atalhoEData {
+        padding: 10px 40px 0px 20px;
+    }
+
+    .avaliacoesUsuarios {
+        flex-direction: column;
+        gap: 45px;
+    }
+
+    .hostContentBox {
+        flex-direction: column;
+    }
+
+    .hostCard {
+        width: 400px;
+    }
+
+    .hostBioText p {
+        width: 770px;
+    }
+
+    .aboutHostRight p {
+        width: 740px;
+    }
+
+    .regionConteiner div {
+        padding: 40px 0px;
+    }
+
+    .footerServices {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footerServices div {
+        padding: 25px 0px 25px 0px;
+        border-top: 1px solid #9292922d;
+    }
+}

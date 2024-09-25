@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa charmosa de madeira na montanha com mata.</title>
+    <link rel="shortcut icon" type="imagex/svg" href="../public/assets/images/airbnbIconeBarraEndereco.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../public/css/fonts.css">
+    <link rel="stylesheet" href="../public/css/global.css">
+</head>
+<body>
+    <script>
+        const mediaQuery = window.matchMedia('(min-width: 500px)');
+        function verificarTamanhoTela(e) {
+          if (e.matches && window.location.pathname !== '/index.html') {
+            window.location.href = 'index.html';
+          }
+        }
+        verificarTamanhoTela(mediaQuery);
+        mediaQuery.addEventListener('change', verificarTamanhoTela);
+    </script>
+    
+</body>
+</html>
