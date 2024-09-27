@@ -34,6 +34,7 @@
     border-radius: 50px;
     box-shadow: rgba(0, 0, 0, 0.452) 0px 3px 5px;
     transition: 80ms ease;
+    scale: 110%;
 }
 
 .slide-icons:active {
@@ -644,7 +645,7 @@ li {
 
 .book {
     position: fixed;
-    top: 91vh;
+    top: 100vh;
     width: 89%;
     background-color: white;
     border-top: solid 1px #dbdbdb;
@@ -697,7 +698,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 105px;
+    padding-bottom: 30px;
 }
 
 @media screen and (max-width: 375px) {
