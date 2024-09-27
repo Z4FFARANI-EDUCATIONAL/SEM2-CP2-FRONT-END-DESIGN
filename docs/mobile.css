@@ -645,12 +645,13 @@ li {
 
 .book {
     position: fixed;
-    top: 100vh;
-    width: 89%;
+    bottom: 0vh;
+    width: 90%;
     background-color: white;
     border-top: solid 1px #dbdbdb;
     display: flex;
-    padding: 16px 35px 16px 25px;
+
+    padding: 16px 25px;
     align-items: center;
     justify-content: space-between;
 }
@@ -698,7 +699,12 @@ li {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
+}
+
+.more-info {
+    font-size: 0.8rem;
+    margin-bottom: 8px;
 }
 
 @media screen and (max-width: 375px) {
@@ -710,11 +716,6 @@ li {
     .slide-buttons {
         width: 347px;
         margin: -240px 0px 0px 0px;
-    }
-
-    .more-info {
-        font-size: 0.8rem;
-        margin-bottom: 8px;
     }
 
     .level-slide {
@@ -763,15 +764,6 @@ li {
         margin: -200px 0px 0px 0px;
     }
 
-    .more-info {
-        font-size: 0.7rem;
-        margin-bottom: 8px;
-    }
-
-    .location-info-details {
-        font-size: 0.9rem;
-    }
-
     .level-slide {
         margin: -40px 260px;
     }
@@ -783,6 +775,11 @@ li {
 
     .house-place img {
         height: 95px;
+    }
+
+    .more-info {
+        font-size: 0.7rem;
+        margin-bottom: 8px;
     }
     
     .interior-slide {
