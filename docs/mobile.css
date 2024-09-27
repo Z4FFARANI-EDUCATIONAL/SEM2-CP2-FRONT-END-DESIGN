@@ -1,5 +1,8 @@
-.slide {
-    width: 425px;
+body {
+    margin: 0;
+}
+
+.slide {    
     height: 320px;
     margin-top: -37px;
 }
@@ -15,10 +18,9 @@
 }
 
 .slide-buttons {
-    width: 397px;
+    width: 390px;
     position: absolute;
-    margin: -284px 0px 0px 0px;
-    padding: 14px;
+    margin: -270px 0px 0px 14px;
     display: flex;
     justify-content: space-between;
 }
@@ -650,8 +652,7 @@ li {
     background-color: white;
     border-top: solid 1px #dbdbdb;
     display: flex;
-
-    padding: 16px 25px;
+    padding: 16px 25px 35px 25px;
     align-items: center;
     justify-content: space-between;
 }
@@ -699,7 +700,7 @@ li {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-bottom: 35px;
+    padding-bottom: 130px;
 }
 
 .more-info {
@@ -709,13 +710,17 @@ li {
 
 @media screen and (max-width: 375px) {
     .slide {
-        width: 375px;
         height: 280px;
     }
 
     .slide-buttons {
-        width: 347px;
-        margin: -240px 0px 0px 0px;
+        width: 340px;
+        margin: -230px 0px 0px 17px;
+    }
+
+    .more-info {
+        font-size: 0.7rem;
+        margin-bottom: 8px;
     }
 
     .level-slide {
@@ -755,13 +760,12 @@ li {
 
 @media screen and (max-width: 320px) {
     .slide {
-        width: 320px;
         height: 240px;
     }
 
     .slide-buttons {
-        width: 292px;
-        margin: -200px 0px 0px 0px;
+        width: 290px;
+        margin: -190px 0px 0px 15px;
     }
 
     .level-slide {
@@ -775,11 +779,6 @@ li {
 
     .house-place img {
         height: 95px;
-    }
-
-    .more-info {
-        font-size: 0.7rem;
-        margin-bottom: 8px;
     }
     
     .interior-slide {
