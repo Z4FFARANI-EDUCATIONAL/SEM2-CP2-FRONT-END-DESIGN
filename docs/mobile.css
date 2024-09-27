@@ -1,8 +1,17 @@
 .slide {
-    object-fit: cover;
-    width: 100%;
+    width: 425px;
     height: 320px;
     margin-top: -37px;
+}
+
+.show-images {
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.show-images::-webkit-scrollbar {
+    display: none;
 }
 
 .slide-buttons {
@@ -35,13 +44,12 @@
 .slide img {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
 .level-slide {
     position: absolute;
     color: white;
-    margin: -40px 360px;
+    margin: -40px 365px;
     font-size: 0.8rem;
     font-weight: 600;
     background-color: rgba(0, 0, 0, 0.500);
@@ -197,7 +205,7 @@ a {
 }
 
 .house-place img:active {
-    scale: 95%;
+    scale: 98%;
 }
 
 .title-place {
@@ -248,7 +256,7 @@ a {
 }
 
 .offering-button:active {
-    scale: 95%;
+    scale: 98%;
     background-color: rgba(128, 128, 128, 0.164);
 }
 
@@ -532,7 +540,7 @@ h4 {
 }
 
 .message-host:active {
-    scale: 95%;
+    scale: 98%;
 }
 
 .message-host p {
@@ -662,11 +670,11 @@ li {
     border: none;
     border-radius: 8px;
     background: linear-gradient(90deg, #E51D4D, #D90765);
-    transition: 80ms ease;
+    transition: 100ms ease;
 }
 
 .reserve:active {
-    scale: 95%;
+    scale: 97%;
     background: linear-gradient(90deg, #D90765, #E51D4D);
 }
 
@@ -694,12 +702,13 @@ li {
 
 @media screen and (max-width: 375px) {
     .slide {
-        height: 287px;
+        width: 375px;
+        height: 280px;
     }
 
     .slide-buttons {
         width: 347px;
-        margin: -251px 0px 0px 0px;
+        margin: -240px 0px 0px 0px;
     }
 
     .more-info {
@@ -708,7 +717,7 @@ li {
     }
 
     .level-slide {
-        margin: -40px 310px;
+        margin: -40px 315px;
     }
 
     .more-house-info svg {
@@ -744,12 +753,13 @@ li {
 
 @media screen and (max-width: 320px) {
     .slide {
-        height: 250px;
+        width: 320px;
+        height: 240px;
     }
 
     .slide-buttons {
         width: 292px;
-        margin: -214px 0px 0px 0px;
+        margin: -200px 0px 0px 0px;
     }
 
     .more-info {
@@ -762,7 +772,7 @@ li {
     }
 
     .level-slide {
-        margin: -40px 255px;
+        margin: -40px 260px;
     }
 
     .more-house-info svg {

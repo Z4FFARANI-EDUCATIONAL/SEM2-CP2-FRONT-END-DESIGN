@@ -15,8 +15,6 @@ header{
     font-size: 14px;
 }
 
-
-
 .rightContent {
     display: flex;
 }
@@ -308,6 +306,12 @@ main{
     font-size: 14px;
     background-color: #FFFFFF;
     cursor: pointer;
+    transition: 80ms ease;
+}
+
+
+.allPhotosBtn:active {
+    scale: 98%;
 }
 
 /* CSS INFORMAÇÕES DA LOCAÇÃO */
@@ -596,11 +600,16 @@ main{
     font-size: 16px;
     color: rgb(41, 39, 39);
     margin-top: 24px;
+    transition: 80ms ease;
 }
 
 .btnComodidade:hover{
     transition: 0.2s;
     background-color: rgb(243, 243, 243);
+}
+
+.btnComodidade:active {
+    scale: 98%;
 }
 
 /* CSS CALENDARIO */
@@ -781,7 +790,9 @@ main{
     border-radius: 10px;
     border: 1px solid rgba(184, 184, 184, 0.425);
     box-shadow: 0px 5px 10px rgba(181, 181, 181, 0.61);
-    
+    position: sticky;
+    top: 5vh;
+    margin-bottom: 60px;
 }
 
 .nightPrice{
@@ -880,6 +891,7 @@ main{
     background: rgb(229,29,78);
     background: linear-gradient(90deg, rgba(229,29,78,1) 0%, rgba(215,5,101,1) 100%);
     cursor: pointer;
+    transition: 80ms ease;
 }
 
 .bookingBtn:hover{
@@ -887,6 +899,10 @@ main{
     background: rgb(229,29,78);
     background: linear-gradient(270deg, rgba(229,29,78,1) 0%, rgba(215,5,101,1) 100%);
 } 
+
+.bookingBtn:active {
+    scale: 95%;
+}
 
 p.warning{
     display: flex;
@@ -920,7 +936,7 @@ p.priceUnderline{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 24px;
+    margin-top: 35px;
     gap: 15px;
     color: #6A6A6A;
 }
@@ -1136,10 +1152,15 @@ p.priceUnderline{
     font-size: 14px;
     cursor: pointer;
     margin-bottom: 32px;
+    transition: 80ms ease;
 }
 
 .sendMessageHost:hover{
     background-color: #000000;
+}
+
+.sendMessageHost:active {
+    scale: 98%;
 }
 
 
@@ -1345,7 +1366,7 @@ footer{
 
     header .logo {
         padding-right: 0px;
-        content: url(../public/assets/images/closedLogo.png);
+        content: url(./public/assets/images/closedLogo.png);
         height: 36px
     }
 
@@ -1354,7 +1375,7 @@ footer{
     }
 
     .imgCalendario {
-        content: url(../public/assets/images/closedCalendar.png);
+        content: url(./public/assets/images/closedCalendar.png);
         height: 530px;
     }
 
@@ -1393,7 +1414,7 @@ footer{
 @media screen and (max-width: 768px) {
     header .logo {
         padding-right: 0px;
-        content: url(../public/assets/images/airbnbHeaderLogo.png);
+        content: url(./public/assets/images/airbnbHeaderLogo.png);
         height: 36px
     }
 
