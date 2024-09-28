@@ -74,4 +74,3 @@ Acessar o site executando o arquivo `index.html` ou `mobile.html`.
 
 # AGRADECIMENTOS
 - **[Alexandre Russi Junior](https://github.com/alexandrerussi)**
-- **[Eduardo]()**
