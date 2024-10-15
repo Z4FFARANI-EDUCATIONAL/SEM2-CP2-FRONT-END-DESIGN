@@ -35,7 +35,7 @@ git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git
 cd SEM2-CP2-FRONT-END-DESIGN/docs
 ```
 
-3. Acessar o site executando o arquivo: `index.html`, ou o arquivo: `mobile.html`.
+3. Acessar o site executando o arquivo: `index.html`, ou o arquivo: `mobile.html`
 
 <br>
 
