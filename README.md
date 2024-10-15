@@ -29,7 +29,7 @@ Criar uma pasta no computador para ser o repositório local.
 
 Abrir a pasta criada em uma IDE de preferência.
 
-No terminal da IDE, clonar o repositório com `git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git`
+No terminal da IDE, clonar o repositório com `git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git`.
 
 No terminal da IDE, navegar até a pasta do projeto com `cd SEM2-CP2-FRONT-END-DESIGN/docs`.
 
