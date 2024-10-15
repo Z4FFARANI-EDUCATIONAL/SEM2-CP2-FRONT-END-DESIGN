@@ -25,15 +25,17 @@ Foram criados dois arquivos para o site:
 <br>
 
 # INSTRUÇÕES
-Criar uma pasta no computador para ser o repositório local.
+1. Em um terminal, clonar o repositório:
+```bash
+git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git
+```
 
-Abrir a pasta criada em uma IDE de preferência.
+2. No terminal, navegar até a pasta do projeto:
+```bash
+cd SEM2-CP2-FRONT-END-DESIGN/docs
+```
 
-No terminal da IDE, clonar o repositório com `git clone https://github.com/Z4FFARANI-EDUCATIONAL/SEM2-CP2-FRONT-END-DESIGN.git`.
-
-No terminal da IDE, navegar até a pasta do projeto com `cd SEM2-CP2-FRONT-END-DESIGN/docs`.
-
-Acessar o site executando o arquivo `index.html` ou `mobile.html`.
+3. Acessar o site executando o arquivo `index.html` ou `mobile.html`.
 
 <br>
 
