@@ -1,10 +1,10 @@
 ![banner](./docs/assets/banner.png)
 
 # INTEGRANTES
-- **Guilherme Santos Nunes** | 558989
-- **Kaique Rodrigues Zaffarani** | 556677
-- **Kairo da Silva Silvestre de Carvalho** | 558288
-- **Rafael Menezes Viana** | 558287
+- **Guilherme Santos Nunes**
+- **Kaique Zaffarani**
+- **Kairo da Silva Silvestre de Carvalho**
+- **Rafael Menezes Viana**
 
 ## LINKS
 - **[ANÚNCIO](https://www.airbnb.com.br/rooms/43811303?source_impression_id=p3_1725563193_P3JqSKx1Z7hlryIk&check_in=2024-10-01&guests=1&adults=1&check_out=2024-10-06)**
