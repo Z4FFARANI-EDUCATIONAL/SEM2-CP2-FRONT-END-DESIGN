@@ -1,10 +1,10 @@
 ![banner](./docs/assets/banner.png)
 
 # INTEGRANTES
-- **Guilherme Santos Nunes**
-- **Kaique Zaffarani**
-- **Kairo da Silva Silvestre de Carvalho**
-- **Rafael Menezes Viana**
+- **[Guilherme Santos Nunes](https://github.com/sannunez)**
+- **[Kairo da Silva Silvestre de Carvalho](https://github.com/KairoSilvestre)**
+- **[Kaique Zaffarani](https://github.com/Z4ffarani)**
+- **[Rafael Menezes Viana](https://github.com/vianafs)**
 
 ## LINKS
 - **[ANÚNCIO](https://www.airbnb.com.br/rooms/43811303?source_impression_id=p3_1725563193_P3JqSKx1Z7hlryIk&check_in=2024-10-01&guests=1&adults=1&check_out=2024-10-06)**
@@ -41,7 +41,7 @@ cd SEM2-CP2-FRONT-END-DESIGN/docs
 
 # FUNÇÕES
 
-**`index.html`** e **`mobile.html`**:
+`index.html` e `mobile.html`:
 - **Escutador de evento** | Utilizado para detectar a proporção da tela e alternar entre os arquivos HTML de acordo com o tamanho da janela do navegador. A função JavaScript `addEventListener` monitora o evento de redimensionamento (`resize`) e, ao identificar uma mudança de breakpoint (ponto de interrupção), carrega o arquivo correspondente, proporcionando uma experiência de navegação adequada a cada dispositivo.
 
 - **API para correspondência de tela** | A API do JavaScript `matchMedia` verifica quando a largura da tela atinge um breakpoint específico. Quando um breakpoint é identificado, o `script` carrega o arquivo HTML apropriado para garantir a melhor experiência de visualização para o usuário.
@@ -50,10 +50,10 @@ cd SEM2-CP2-FRONT-END-DESIGN/docs
 
 <br>
 
-**`index.css`** e **`mobile.css`**:
+`index.css` e `mobile.css`:
 - **Media queries** | Utilizadas para definir estilos específicos para diferentes tamanhos de tela. Isso assegura que o layout e os elementos da página se adaptem adequadamente a dispositivos de várias dimensões, oferecendo uma experiência de usuário consistente.
 
-- **Breakpoints** | Os breakpoints foram definidos para diferenciar entre versão desktop e mobile, garantindo que as media queries (consulta de mídia) e o JavaScript funcionem em conjunto para alterar o layout quando a largura da tela ultrapassa ou fica abaixo de um determinado valor.
+- **Breakpoints** | Os breakpoints foram definidos para diferenciar entre versão desktop e mobile, garantindo que as media queries e o JavaScript funcionem em conjunto para alterar o layout quando a largura da tela ultrapassa ou fica abaixo de um determinado valor.
 
 - **Unidades relativas** | Foram usadas unidades relativas como `rem` (para tamanhos de fonte e espaçamentos) e `vh` (altura da viewport) para criar um layout mais flexível e adaptável ao tamanho da tela do usuário.
 
