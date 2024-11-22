@@ -62,7 +62,7 @@ cd SEM2-CP2-FRONT-END-DESIGN/docs
 # OBSERVAÇÕES
 - Para que o JavaScript consiga alternar entre os arquivos HTML corretamente, é necessário ajustar a barra de breakpoint do inspetor de elementos do navegador de forma lenta e gradual. Mudanças rápidas podem impedir a execução precisa do `script`, especialmente quando se trata de transições em breakpoints próximos.
 - Os elementos de interação da página, como botões, links, mapas e calendários, não são totalmente fiéis ou funcionais e servem apenas a fins estéticos.
-- Todos os direitos de marca são reservados ao [Airbnb](https://www.airbnb.com.br), não havendo qualquer parceria direta com este projeto.
+- Todos os direitos de marca são reservados ao Airbnb, não havendo qualquer parceria direta com este projeto.
 - Foi solicitado o direito de uso de imagem tanto do anúncio quanto do anunciante.
 
 <br>
